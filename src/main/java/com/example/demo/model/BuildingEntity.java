@@ -1,6 +1,6 @@
-package model;
-import model.enumeration.buildingMaterial;
-import model.enumeration.buildingType;
+package com.example.demo.model;
+import com.example.demo.model.enumeration.buildingMaterial;
+import com.example.demo.model.enumeration.buildingType;
 
 import javax.persistence.*;
 import java.util.Date;

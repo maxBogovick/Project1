@@ -1,6 +1,6 @@
-package model;
+package com.example.demo.model;
 
-import model.enumeration.cityLocation;
+import com.example.demo.model.enumeration.cityLocation;
 
 import javax.persistence.*;
 import javax.xml.crypto.Data;

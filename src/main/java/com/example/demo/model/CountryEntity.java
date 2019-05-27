@@ -1,7 +1,7 @@
-package model;
+package com.example.demo.model;
 
-import model.enumeration.Currency;
-import model.enumeration.Language;
+import com.example.demo.model.enumeration.Currency;
+import com.example.demo.model.enumeration.Language;
 
 import javax.persistence.*;
 

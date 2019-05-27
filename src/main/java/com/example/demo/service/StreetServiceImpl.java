@@ -1,12 +1,12 @@
-package service;
+package com.example.demo.service;
 
-import model.StreetEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import repository.StreetRepository;
 
-import java.beans.Transient;
+import com.example.demo.repository.StreetRepository;
+import com.example.demo.model.StreetEntity;
+
 import java.util.Collection;
 import java.util.Optional;
 
@@ -16,7 +16,7 @@ public class StreetServiceImpl {
     private StreetRepository streetRepository;
 
     @Transactional
-    public void createOrUpdate(StreetEntity streetEntity){
+    public void createOrUpdate(StreetEntity streetEntity) {
         streetRepository.save(streetEntity);
     }
 
@@ -27,11 +27,12 @@ public class StreetServiceImpl {
 //       streetRepository.delete(streetEntity1);
 //    }
 
-    public StreetEntity findById(int id){
+    public StreetEntity findById(int id) {
         Optional<StreetEntity> street = streetRepository.findById(id);
         return street.orElse(new StreetEntity());
     }
-    public Collection<StreetEntity> findAll(){
-        return  streetRepository.findAll();
+
+    public Collection<StreetEntity> findAll() {
+        return streetRepository.findAll();
     }
 }
